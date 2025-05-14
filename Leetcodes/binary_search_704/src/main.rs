@@ -1,5 +1,3 @@
-use core::num;
-
 pub struct Solution;
 // impl Solution {
 //     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
@@ -44,14 +42,14 @@ pub struct Solution;
 //         -1
 //     }
 // }
-impl Solution {
-    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-        match nums.binary_search(&target) {
-            Ok(v) => return v.try_into().unwrap(),
-            Err(e) => return -1,
-        };
-    }
-}
+ impl Solution {
+     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+         match nums.binary_search(&target) {
+             Ok(v) => return v.try_into().unwrap(),
+             Err(e) => return -1, };
+ }
+ }
+
 fn main() {
     let res = Solution::search(vec![5], -5);
     println!("{res}");
