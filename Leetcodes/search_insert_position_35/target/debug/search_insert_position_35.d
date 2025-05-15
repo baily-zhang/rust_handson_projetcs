@@ -1,0 +1,1 @@
+/Users/blithe/Desktop/Code/rust/projects/Leetcodes/search_insert_position_35/target/debug/search_insert_position_35: /Users/blithe/Desktop/Code/rust/projects/Leetcodes/search_insert_position_35/src/main.rs
