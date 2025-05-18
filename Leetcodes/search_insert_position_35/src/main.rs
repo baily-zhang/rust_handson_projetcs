@@ -8,19 +8,16 @@ struct Solution;
 
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-        let (mut left, mut right) = (0, nums.len());
-
+        let (mut left, mut right) = (0, nums.len() as usize);
         while left < right {
             let mid = left + (right - left) / 2;
-
             if nums[mid] < target {
-                left = mid + 1; // 排除 mid，查右边
+                left = mid + 1;
             } else {
-                right = mid; // 保留 mid，查左边
+                right = mid;
             }
         }
-
-        left as i32 // 此时 left 是插入位置
+        left as i32
     }
 }
 
