@@ -27,6 +27,5 @@ fn main() -> Result<(), ParseIntError> {
         tokens -= cost;
         println!("You now have {tokens} tokens.");
     }
-    let num = "42".parse();
     Ok(())
 }
