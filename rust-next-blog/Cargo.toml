@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+axum = "0.8.4"                  # 最新的 Axum 主库
+tokio = { version = "1.45.0", features = ["full"] }  # 用于 async runtime
+serde = { version = "1.0", features = ["derive"] }   # 序列化 / 反序列化支持
+serde_json = "1.0"             # 用于返回 JSON
+tower = "0.5.2"                # Tower middleware，Axum 基于它构建
+hyper = "1.6.0"                # 底层 HTTP 引擎，Axum 内部依赖它
