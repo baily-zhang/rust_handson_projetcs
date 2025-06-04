@@ -31,7 +31,7 @@ async fn get_posts() -> Json<Vec<Post>> {
 async fn main() {
     let app = Router::new().route("/api/posts", get(get_posts));
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([127, 0, 0, 1], 3001));
     let listener = TcpListener::bind(addr).await.unwrap();
 
     println!("🚀 Axum running at http://{}", addr);
